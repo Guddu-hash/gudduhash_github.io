@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guddu Kumar — Senior Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">GK<span class="dot"></span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-nav>About</a></li>
+      <li><a href="#experience" data-nav>Experience</a></li>
+      <li><a href="#projects" data-nav>Projects</a></li>
+      <li><a href="#skills" data-nav>Skills</a></li>
+      <li><a href="#contact" data-nav>Contact</a></li>
+    </ul>
+    <div class="nav-indicator" id="navIndicator"></div>
+    <a href="resume.pdf" download class="nav-resume">Resume ↓</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-inner">
+      <p class="eyebrow reveal">// senior software engineer &nbsp;·&nbsp; ai systems</p>
+      <h1 class="hero-title">
+        <span class="reveal-line"><span class="reveal-inner">Guddu Kumar</span></span>
+        <span class="reveal-line"><span class="reveal-inner">builds systems that</span></span>
+        <span class="reveal-line"><span class="reveal-inner"><em>don't fall over.</em></span></span>
+      </h1>
+      <p class="hero-sub reveal">4+ years shipping nationwide taxation platforms and AI-integrated systems in production — where correctness, performance, and uptime aren't optional.</p>
+
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary"><span>View work</span></a>
+        <a href="#contact" class="btn btn-ghost"><span>Get in touch</span></a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <div class="stat-num" data-count="4">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="3">0</div>
+          <div class="stat-label">Enterprise Systems Shipped</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="58" data-suffix="%">0</div>
+          <div class="stat-label">Peak Efficiency Gain</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue reveal"><span></span>scroll</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-eyebrow reveal">01 · About</p>
+      <div class="about-grid">
+        <div class="about-photo reveal">
+          <img src="profile.jpg" alt="Guddu Kumar">
+          <div class="photo-frame"></div>
+        </div>
+        <div class="about-copy">
+          <h2 class="reveal">Full Stack .NET Developer & AI Integrated Engineer, based in Pune.</h2>
+          <p class="reveal">I work on the unglamorous but critical layer of software — payment reconciliation, taxpayer registration pipelines, assessment engines — the parts of a system that governments and enterprises can't afford to get wrong. Currently at NCSI, I split my time between hardening core .NET platforms and integrating LLM-driven automation into engineering workflows.</p>
+          <div class="about-tags reveal">
+            <span>C# / .NET 6-8</span>
+            <span>ASP.NET Web API</span>
+            <span>Azure & AWS</span>
+            <span>RAG / LLM Integration</span>
+            <span>Clean Architecture</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <p class="section-eyebrow reveal">02 · Experience</p>
+      <h2 class="section-title reveal">Deployment history.</h2>
+
+      <div class="pipeline" id="pipeline">
+        <div class="pipeline-line"><div class="pipeline-fill" id="pipelineFill"></div></div>
+
+        <div class="pipeline-node reveal">
+          <div class="node-dot"></div>
+          <div class="node-card">
+            <div class="node-meta">
+              <span class="node-badge live">CURRENT</span>
+              <span class="node-date">Jan 2025 — Present</span>
+            </div>
+            <h3>Senior Software Engineer</h3>
+            <p class="node-org">IRIN — Singapore Taxation System · NCSI (Gov+)</p>
+            <p class="node-desc">Owned the taxpayer registration module end-to-end in .NET Core & ASP.NET Web API, cutting onboarding time by 45%. Built secure payment reconciliation services that reduced payment failures by 58%, and raised API test coverage by 40% via structured Postman suites.</p>
+            <div class="node-metrics">
+              <div><span>45%</span>faster onboarding</div>
+              <div><span>58%</span>fewer payment failures</div>
+              <div><span>40%</span>test coverage gain</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pipeline-node reveal">
+          <div class="node-dot"></div>
+          <div class="node-card">
+            <div class="node-meta">
+              <span class="node-badge">SHIPPED</span>
+              <span class="node-date">Apr 2025 — Dec 2025</span>
+            </div>
+            <h3>Software Engineer</h3>
+            <p class="node-org">AI-Driven Testing Assistant (ADTA) · NCSI Enterprise</p>
+            <p class="node-desc">Designed an end-to-end GenAI platform automating test case generation, planning, and defect categorization via custom LLM prompt pipelines. Built on .NET Core Web API following Clean Architecture and SOLID principles — cut manual testing effort by 40%.</p>
+            <div class="node-metrics">
+              <div><span>40%</span>less manual effort</div>
+              <div><span>1</span>GenAI platform, 0 to 1</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pipeline-node reveal">
+          <div class="node-dot"></div>
+          <div class="node-card">
+            <div class="node-meta">
+              <span class="node-badge">SHIPPED</span>
+              <span class="node-date">Apr 2023 — Mar 2025</span>
+            </div>
+            <h3>Associate Software Engineer</h3>
+            <p class="node-org">RAMIS — Sri Lanka Taxation System · NCSI (Gov+)</p>
+            <p class="node-desc">Tuned the core .NET stack and complex SQL queries for a 35% response-time improvement. Built the Forms & Returns module, core Framework components, and contributed to the GA assessment engine — accuracy up 60%.</p>
+            <div class="node-metrics">
+              <div><span>35%</span>faster response time</div>
+              <div><span>55%</span>filing efficiency</div>
+              <div><span>60%</span>assessment accuracy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section-eyebrow reveal">03 · Projects</p>
+      <h2 class="section-title reveal">Systems in production.</h2>
+
+      <div class="project-grid">
+        <article class="project-card reveal" data-tilt>
+          <div class="pc-top">
+            <span class="pc-status live">LIVE</span>
+            <span class="pc-index">01</span>
+          </div>
+          <h3>IRIN</h3>
+          <p class="pc-sub">Singapore Taxation System</p>
+          <p class="pc-desc">Nationwide platform for taxpayer onboarding and payment processing, serving high transaction volumes with strict reconciliation guarantees.</p>
+          <div class="pc-tags"><span>.NET Core</span><span>ASP.NET Web API</span><span>SQL Server</span></div>
+        </article>
+
+        <article class="project-card reveal" data-tilt>
+          <div class="pc-top">
+            <span class="pc-status live">LIVE</span>
+            <span class="pc-index">02</span>
+          </div>
+          <h3>ADTA</h3>
+          <p class="pc-sub">AI-Driven Testing Assistant</p>
+          <p class="pc-desc">GenAI platform automating the STLC — test generation, planning, and defect triage — via orchestrated LLM prompt pipelines.</p>
+          <div class="pc-tags"><span>LLM Pipelines</span><span>Clean Architecture</span><span>.NET Core</span></div>
+        </article>
+
+        <article class="project-card reveal" data-tilt>
+          <div class="pc-top">
+            <span class="pc-status prod">PROD</span>
+            <span class="pc-index">03</span>
+          </div>
+          <h3>RAMIS</h3>
+          <p class="pc-sub">Sri Lanka Taxation System</p>
+          <p class="pc-desc">High-impact nationwide taxation system — Forms & Returns, Framework, and GA assessment modules built for scale and accuracy.</p>
+          <div class="pc-tags"><span>.NET Core</span><span>Angular</span><span>SQL Server</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="section-eyebrow reveal">04 · Stack</p>
+      <h2 class="section-title reveal">Tools of the trade.</h2>
+
+      <div class="stack-grid">
+        <div class="stack-col reveal">
+          <h4>Backend</h4>
+          <ul><li>C# / .NET 6-8</li><li>ASP.NET Web API</li><li>Entity Framework Core</li><li>Microservices</li><li>SQL Server</li></ul>
+        </div>
+        <div class="stack-col reveal">
+          <h4>Frontend</h4>
+          <ul><li>Angular</li><li>TypeScript</li><li>HTML5 / CSS3</li><li>REST integration</li></ul>
+        </div>
+        <div class="stack-col reveal">
+          <h4>Cloud & DevOps</h4>
+          <ul><li>Azure App Service</li><li>Azure DevOps</li><li>AWS Bedrock / Lambda</li><li>Docker</li><li>CI/CD Pipelines</li></ul>
+        </div>
+        <div class="stack-col reveal">
+          <h4>AI / GenAI</h4>
+          <ul><li>LLM Integration</li><li>RAG</li><li>Prompt Engineering</li><li>Vector DBs (FAISS, Pinecone)</li><li>LangChain</li></ul>
+        </div>
+      </div>
+
+      <div class="cred-row reveal">
+        <span>Spot Award ×3</span><span>Sunshine.coder Award</span><span>NCSI Innovation Team</span>
+        <span>Azure AZ-900 Certified</span><span>B.E. CSE — Chandigarh University</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <p class="section-eyebrow reveal">05 · Contact</p>
+      <h2 class="contact-title reveal">Let's build something<br>that <em>holds up.</em></h2>
+      <p class="contact-sub reveal">Open to Senior Software Engineer and Full-Stack .NET / AI-integration roles.</p>
+
+      <div class="contact-links reveal">
+        <a href="https://www.linkedin.com/in/guddu-kumar-88a323200" target="_blank" rel="noopener" class="contact-link">
+          <span class="cl-label">LinkedIn</span><span class="cl-value">/in/guddu-kumar-88a323200</span><span class="cl-arrow">↗</span>
+        </a>
+        <a href="mailto:guddukumarrr918@gmail.com" class="contact-link">
+          <span class="cl-label">Email</span><span class="cl-value">guddukumarrr918@gmail.com</span><span class="cl-arrow">↗</span>
+        </a>
+        <a href="tel:+917004043726" class="contact-link">
+          <span class="cl-label">Phone</span><span class="cl-value">+91 7004043726</span><span class="cl-arrow">↗</span>
+        </a>
+        <div class="contact-link no-hover">
+          <span class="cl-label">Location</span><span class="cl-value">Pune, India</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <span>© 2026 Guddu Kumar</span>
+    <span class="status-live"><i></i>Available for new opportunities</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
